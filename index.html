@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="screen custom-scrollbar">
+        <div class="container flex switch-flex-direction">
+            <div class="blob_master">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="Gradient1" gradientTransform="rotate(-45 .5 .5)">
+                        <stop offset="0%" stop-color="#00DBDE" />
+                        <stop offset="100%" stop-color="#FC00FF" />
+                    </linearGradient>
+                    <path fill="url(#Gradient1)" transform="translate(100 100)" stroke="#c258f7" stroke-width="1"
+                        stroke-linecap="round">
+                        <animate dur="5000ms" attributeName="d" repeatCount="indefinite"
+                            values="M45.2,-78.5C58.6,-70.6,69.5,-58.5,77.9,-44.7C86.3,-30.9,92.2,-15.5,91.6,-0.4C91,14.7,83.8,29.5,74.8,42.3C65.9,55.1,55.2,66.1,42.4,74.4C29.6,82.7,14.8,88.3,-0.4,89.1C-15.6,89.8,-31.3,85.5,-44.3,77.3C-57.3,69.2,-67.7,57.1,-76,43.6C-84.2,30.1,-90.3,15,-90.7,-0.3C-91.2,-15.6,-86.1,-31.2,-78.3,-45.4C-70.4,-59.6,-59.9,-72.5,-46.4,-80.3C-32.9,-88.1,-16.4,-90.9,-0.3,-90.4C15.9,-90,31.8,-86.3,45.2,-78.5Z;
+                            M44.2,-78.2C57,-69.2,66.9,-56.8,73.9,-43.2C80.8,-29.6,84.8,-14.8,86,0.7C87.2,16.1,85.5,32.3,78.2,45.3C70.9,58.3,58,68.1,44,76.2C30,84.2,15,90.4,0.1,90.3C-14.8,90.1,-29.7,83.6,-42.8,75.1C-56,66.6,-67.5,56.1,-75.8,43.3C-84.1,30.4,-89.1,15.2,-88.9,0.1C-88.6,-14.9,-83.1,-29.9,-75.2,-43.3C-67.2,-56.7,-56.8,-68.6,-43.9,-77.5C-31,-86.4,-15.5,-92.4,0.1,-92.6C15.7,-92.8,31.4,-87.2,44.2,-78.2Z;
+                            M44.5,-77.2C58.9,-68.8,72.6,-59.3,80.7,-46.3C88.8,-33.2,91.3,-16.6,90,-0.8C88.7,15.1,83.6,30.2,76.2,44.4C68.8,58.6,59,71.9,45.9,80C32.8,88.1,16.4,91,0.2,90.7C-16.1,90.4,-32.1,86.9,-45.9,79.2C-59.6,71.5,-71,59.5,-79,45.6C-87,31.7,-91.6,15.9,-92,-0.2C-92.4,-16.3,-88.5,-32.6,-80.8,-46.9C-73,-61.2,-61.3,-73.6,-47.2,-82.1C-33.1,-90.6,-16.5,-95.2,-0.7,-94C15.1,-92.7,30.1,-85.5,44.5,-77.2Z;
+                            M44.2,-76.3C58,-68.5,70.5,-58.2,77.6,-45.1C84.7,-31.9,86.4,-16,86.1,-0.2C85.7,15.6,83.4,31.2,76.7,44.9C69.9,58.7,58.7,70.5,45.2,78.3C31.7,86.1,15.9,89.8,-0.1,90C-16,90.1,-32.1,86.7,-44.9,78.5C-57.7,70.4,-67.4,57.4,-75.8,43.5C-84.3,29.6,-91.6,14.8,-91.4,0.1C-91.3,-14.7,-83.8,-29.3,-75.2,-43.1C-66.7,-56.8,-57.2,-69.7,-44.5,-78.1C-31.7,-86.6,-15.9,-90.8,-0.4,-90.2C15.2,-89.5,30.3,-84.2,44.2,-76.3Z;
+                            M44.8,-78.5C57.9,-70,68.5,-57.8,76.7,-44.1C85,-30.4,90.9,-15.2,91,0.1C91.1,15.3,85.4,30.6,77.1,44.2C68.8,57.8,57.9,69.7,44.6,78.4C31.4,87,15.7,92.6,0,92.6C-15.7,92.6,-31.4,87.1,-44.4,78.3C-57.5,69.5,-67.8,57.3,-75.8,43.7C-83.8,30.1,-89.6,15,-90.6,-0.6C-91.7,-16.3,-88.1,-32.5,-79.8,-45.6C-71.4,-58.6,-58.2,-68.3,-44.2,-76.3C-30.1,-84.4,-15,-90.6,0.4,-91.3C15.8,-92,31.6,-87,44.8,-78.5Z;
+                            M45.2,-78.5C58.6,-70.6,69.5,-58.5,77.9,-44.7C86.3,-30.9,92.2,-15.5,91.6,-0.4C91,14.7,83.8,29.5,74.8,42.3C65.9,55.1,55.2,66.1,42.4,74.4C29.6,82.7,14.8,88.3,-0.4,89.1C-15.6,89.8,-31.3,85.5,-44.3,77.3C-57.3,69.2,-67.7,57.1,-76,43.6C-84.2,30.1,-90.3,15,-90.7,-0.3C-91.2,-15.6,-86.1,-31.2,-78.3,-45.4C-70.4,-59.6,-59.9,-72.5,-46.4,-80.3C-32.9,-88.1,-16.4,-90.9,-0.3,-90.4C15.9,-90,31.8,-86.3,45.2,-78.5Z" />
+                    </path>
+                </svg>
+            </div>
+            <div class="name_container">
+                <h1>Yogesh Bhat</h1>
+
+                <div class="typing-container">
+                    <span id="feature-text"></span>
+                    <span class="input-cursor"></span>
+                    <span class="sentence">&nbsp;Developer</span>
+                </div>
+            </div>
+            <div class="tech_stack">
+                <img src="/assests/images/techs.png" id="tech_img" class="rotating" alt="tech_images" srcset="">
+                <div class="techs">
+                    <div class="tech_icons">
+                        <img src="./assests/images/firebase-1.svg" alt="" srcset="">
+                    </div>
+                    <div class="tech_icons">
+                        <img src="./assests/images/redux.svg" alt="" srcset="">
+                    </div>
+                    <div class="tech_icons">
+                        <img src="./assests/images/mongoose-1.svg" alt="" srcset="">
+                    </div>
+                    <div class="tech_icons">
+                        <img src="./assests/images/sass-1.svg" alt="" srcset="">
+                    </div>
+                    <div class="tech_icons">
+                        <img src="./assests/images/tailwindcss.svg" alt="" srcset="">
+                    </div>
+                    <div class="tech_icons">
+                        <img src="./assests/images/java-4.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="profile_pic">
+                <img src="/assests/images/Yogesh_Bhat.png" alt="profile picture" srcset="">
+            </div> -->
+        </div>
+        <div class="container">
+        </div>
+        <div class="container">A</div>
+        <div class="container">B</div>
+        <div class="container">A</div>
+        <div class="container">B</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

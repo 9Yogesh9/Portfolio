@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: black; */
+    color: white;
+    background-image: linear-gradient(45deg, black, rgba(75, 141, 239, 0.697));
+    /* background-image: url(./assests/images/dots.png); */
+    background-attachment: fixed;
+}
+
+.screen {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.switch-flex-direction {
+    flex-direction: column;
+}
+
+.blob_master {
+    position: relative;
+    top: 5vh;
+    filter: drop-shadow(5px 7px 7px rgb(145, 86, 234));
+}
+
+.name_container {
+
+    /* background-color: pink; */
+    width: 100%;
+    height: 25%;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 4rem;
+    display: flex;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    z-index: 1;
+
+}
+
+.name_container h1 {
+    filter: drop-shadow(1px 1px 6px black);
+}
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 3rem;
+    background-color: white;
+    margin-left: 4px;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.tech_stack {
+    height: 32vh;
+    transform: translate(22vw, -66vh);
+    background-image: linear-gradient(180deg, #6c6a6a0f, #6c6a6a0f), url(/assests/images/Yogesh_Bhat_M.png);
+    display: flex;
+    width: 22rem;
+    border: 1px solid;
+    border-radius: 12rem;
+    /* background-color: #38d7ff; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    filter: drop-shadow(0px 0px 1px #858585) drop-shadow(1px -1px 9px #38d7ff) drop-shadow(-1px 1px 4px #edff40);
+}
+
+#tech_img {
+    width: 87vw;
+    transform: rotate(337deg);
+    transition: all 0.8s;
+}
+
+.techs {
+    display: none;
+}
+
+#profile_pic {
+    width: 100%;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotating {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 50s linear infinite;
+    -moz-animation: rotating 50s linear infinite;
+    -ms-animation: rotating 50s linear infinite;
+    -o-animation: rotating 50s linear infinite;
+    animation: rotating 50s linear infinite;
+}
+
+@media only screen and (min-width: 992px) {
+    .custom-scrollbar {
+        height: 100vh;
+        overflow-y: scroll;
+        width: 100%;
+    }
+
+    /* /* To style the document scrollbar, remove `.custom-scrollbar` */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #393939;
+        /* border-radius: 10px; */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .switch-flex-direction {
+        flex-direction: row;
+    }
+
+    .name_container {
+        width: 40%;
+        height: 100%;
+    }
+
+    .blob_master {
+        filter: drop-shadow(5px 7px 7px rgb(145, 86, 234));
+        width: 43rem;
+        transform: translate(40vw, 3vh);
+    }
+
+    .tech_stack {
+        flex-direction: column;
+        width: 16rem;
+        transform: translate(-75rem, 16rem);
+        height: 32vh;
+        border: 1px solid;
+        border-radius: 8rem;
+        background-image: linear-gradient(180deg, #6c6a6a0f, #6c6a6a0f), url(/assests/images/Yogesh_Bhat_PC.png);
+    }
+
+    #tech_img {
+        width: 26vw;
+        margin-top: 5rem;
+    }
+
+    .techs {
+        display: flex;
+        /* background: pink; */
+        flex-direction: row;
+        width: 26rem;
+        /* height: 30vh; */
+        padding: 5px;
+        filter: drop-shadow(0px 0px 1px #858585) drop-shadow(1px -1px 1px #38d7ff) drop-shadow(-1px 1px 0px #edff40);
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .tech_icons {
+        width: 3vw;
+        height: 7vh;
+        padding: 3px;
+        /* background:pink; */
+    }
+
+    .tech_icons img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
