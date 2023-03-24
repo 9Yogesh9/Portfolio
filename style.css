@@ -94,7 +94,7 @@ body {
 .tech_stack {
     height: 32vh;
     transform: translate(22vw, -66vh);
-    background-image: linear-gradient(180deg, #6c6a6a0f, #6c6a6a0f), url(/assests/images/Yogesh_Bhat_M.png);
+    background-image: linear-gradient(180deg, #6c6a6a0f, #6c6a6a0f), url(./assests/images/Yogesh_Bhat_M.png);
     display: flex;
     width: 22rem;
     border: 1px solid;
@@ -203,7 +203,7 @@ body {
         height: 32vh;
         border: 1px solid;
         border-radius: 8rem;
-        background-image: linear-gradient(180deg, #6c6a6a0f, #6c6a6a0f), url(/assests/images/Yogesh_Bhat_PC.png);
+        background-image: linear-gradient(180deg, #6c6a6a0f, #6c6a6a0f), url(./assests/images/Yogesh_Bhat_PC.png);
     }
 
     #tech_img {
