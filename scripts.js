@@ -28,7 +28,6 @@ $(document).ready(async function () {
   carousel(carouselText, '#feature-text')
 });
 
-
 const carouselText = [
   { text: "React", shadow: "0px 0px 12px #00ff00,0px 0px 15px #ffff00,0px 0px 12px #00ffff" },
   { text: "Node", shadow: "0px 0px 12px #0000ff,0px 0px 15px #ff00ff,0px 0px 12px #00ffff"},
